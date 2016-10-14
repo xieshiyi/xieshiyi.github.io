@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | studyRoad</title>
+  <title>HTML5 canvas 粒子效果文字动画 | studyRoad</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -187,96 +187,60 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/10/14/lizi-text/">HTML5 canvas 粒子效果文字动画</a></h4>
-                            
-                            <p><time datetime="2016-10-14T09:22:25.000Z"><a href="/2016/10/14/lizi-text/">2016-10-14</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/10/14/Font-Awesome-icons/">Icons</a></h4>
-                            
-                            <p><time datetime="2016-10-14T07:16:42.000Z"><a href="/2016/10/14/Font-Awesome-icons/">2016-10-14</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/10/14/Calculator/">贷款计算器</a></h4>
-                            
-                            <p><time datetime="2016-10-14T02:31:25.000Z"><a href="/2016/10/14/Calculator/">2016-10-14</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/10/12/pic-time/">picture time</a></h4>
-                            
-                            <p><time datetime="2016-10-11T16:04:31.000Z"><a href="/2016/10/12/pic-time/">2016-10-12</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-10-14T09:22:25.000Z" itemprop="datePublished">
+          2016-10-14
+      </time>
+    
+</span>
+                <h1>HTML5 canvas 粒子效果文字动画</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>html5实现<a href="http://www.html5tricks.com/demo/html5-canvas-side-text/index.html" target="_blank" rel="external">粒子效果文字动画</a>效果，详情可下载参考<a href="http://www.html5tricks.com/html5-canvas-side-text.html" target="_blank" rel="external">源码</a></p>
+<h2 id="Quick-Learn"><a href="#Quick-Learn" class="headerlink" title="Quick Learn"></a>Quick Learn</h2><h3 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h3><p>1.界面的绘制</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">S.Drawing = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> canvas,</div><div class="line">      context,</div><div class="line">      renderFn</div><div class="line">      requestFrame = <span class="built_in">window</span>.requestAnimationFrame       ||</div><div class="line">                     <span class="built_in">window</span>.webkitRequestAnimationFrame ||</div><div class="line">                     <span class="built_in">window</span>.mozRequestAnimationFrame    ||</div><div class="line">                     <span class="built_in">window</span>.oRequestAnimationFrame      ||</div><div class="line">                     <span class="built_in">window</span>.msRequestAnimationFrame     ||</div><div class="line">                     <span class="function"><span class="keyword">function</span>(<span class="params">callback</span>) </span>&#123;</div><div class="line">                       <span class="built_in">window</span>.setTimeout(callback, <span class="number">1000</span> / <span class="number">60</span>);</div><div class="line">                     &#125;;</div><div class="line"></div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    <span class="attr">init</span>: <span class="function"><span class="keyword">function</span> (<span class="params">el</span>) </span>&#123;</div><div class="line">      canvas = <span class="built_in">document</span>.querySelector(el);</div><div class="line">      context = canvas.getContext(<span class="string">'2d'</span>);</div><div class="line">      <span class="keyword">this</span>.adjustCanvas();</div><div class="line"></div><div class="line">      <span class="built_in">window</span>.addEventListener(<span class="string">'resize'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        S.Drawing.adjustCanvas();</div><div class="line">      &#125;);</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="attr">loop</span>: <span class="function"><span class="keyword">function</span> (<span class="params">fn</span>) </span>&#123;</div><div class="line">      renderFn = !renderFn ? fn : renderFn;</div><div class="line">      <span class="keyword">this</span>.clearFrame();</div><div class="line">      renderFn();</div><div class="line">      requestFrame.call(<span class="built_in">window</span>, <span class="keyword">this</span>.loop.bind(<span class="keyword">this</span>));</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="attr">adjustCanvas</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      canvas.width = <span class="built_in">window</span>.innerWidth;</div><div class="line">      canvas.height = <span class="built_in">window</span>.innerHeight;</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="attr">clearFrame</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      context.clearRect(<span class="number">0</span>, <span class="number">0</span>, canvas.width, canvas.height);</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="attr">getArea</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> &#123; <span class="attr">w</span>: canvas.width, <span class="attr">h</span>: canvas.height &#125;;</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="attr">drawCircle</span>: <span class="function"><span class="keyword">function</span> (<span class="params">p, c</span>) </span>&#123;</div><div class="line">      context.fillStyle = c.render();</div><div class="line">      context.beginPath();</div><div class="line">      context.arc(p.x, p.y, p.z, <span class="number">0</span>, <span class="number">2</span> * <span class="built_in">Math</span>.PI, <span class="literal">true</span>);</div><div class="line">      context.closePath();</div><div class="line">      context.fill();</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;());</div></pre></td></tr></table></figure>
+<h3 id="静态效果显示"><a href="#静态效果显示" class="headerlink" title="静态效果显示"></a>静态效果显示</h3><p>1.倒计时</p>
+<p><img src="https://raw.githubusercontent.com/xieshiyi/picture/master/%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C%E6%96%87%E5%AD%97.png" alt="HTML5实现粒子效果文字动画"></p>
+<p>2.输入文字实现粒子效果<br><img src="https://raw.githubusercontent.com/xieshiyi/picture/master/%E8%BE%93%E5%85%A5%E6%96%87%E5%AD%97.png" alt="HTML5输入文字实现粒子效果"></p>
+<h3 id="网页显示"><a href="#网页显示" class="headerlink" title="网页显示"></a>网页显示</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.html5tricks.com/demo/html5-canvas-side-text/index.html</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://www.html5tricks.com/html5-canvas-side-text.html" target="_blank" rel="external">粒子效果文字动画</a></p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/10/14/Font-Awesome-icons/">
+        Icons →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/10/14/lizi-text/" data-title="HTML5 canvas 粒子效果文字动画" data-url="http://xieshiyi.com/2016/10/14/lizi-text/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
